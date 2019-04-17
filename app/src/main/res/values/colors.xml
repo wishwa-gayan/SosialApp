@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B9F5E4B8</color>
+    <color name="colorPrimaryDark">#F0D5A5</color>
+    <color name="colorAccent">#F39403</color>
+    <color name="colorAccent1">#7E7A78</color>
+
+    <color name="gray_clor">#9E9FA0</color>
+    <color name="btn_color">#BBC6EC</color>
+    <color name="login_singup_text">#E139F7</color>
+    <color name="login_with">#9867F3</color>
+
+</resources>

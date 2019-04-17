@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reg_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context=".reg">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="423dp"
+        android:layout_height="368dp"
+        android:contentDescription="@string/img_logo"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/email"
+        android:ems="10"
+        android:hint="@string/reg_email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/gray_clor" />
+
+    <EditText
+        android:id="@+id/reg_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/password"
+        android:ems="10"
+        android:hint="@string/reg_pwd"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/gray_clor" />
+
+    <EditText
+        android:id="@+id/reg_cpwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:autofillHints=""
+        android:background="@drawable/input"
+        android:drawableStart="@drawable/password"
+        android:ems="10"
+        android:hint="@string/reg_pwd"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/gray_clor" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="374dp"
+        android:layout_height="66dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
+        android:text="@string/reg_btn" />
+
+</LinearLayout>

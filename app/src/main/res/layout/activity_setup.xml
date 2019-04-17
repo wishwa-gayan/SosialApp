@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="7"
+    android:orientation="vertical"
+    tools:context=".setup">
+
+    <include
+        android:id="@+id/setup_toolbar"
+        layout="@layout/appbar_layout" />
+
+    <!--Todo : Image view-->
+
+
+    <RelativeLayout
+        android:id="@+id/setup_profile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="199dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="48dp"
+        android:layout_weight="2">
+
+        <ImageView
+            android:id="@+id/profile_image1"
+            android:layout_width="174dp"
+            android:layout_height="137dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="115dp"
+            android:layout_marginLeft="115dp"
+            android:layout_marginBottom="26dp"
+            android:foregroundGravity="center"
+            android:onClick="setImage"
+            app:srcCompat="@drawable/adduser" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="307dp"
+
+        android:layout_alignParentBottom="true"
+
+        android:layout_marginBottom="88dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <!-- Todo : first name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="0dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Last Name" />
+
+            <EditText
+                android:id="@+id/unametxt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/input"
+                android:hint="Enter Your First Name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/first_name_lbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="First Name" />
+
+            <EditText
+                android:id="@+id/first_name_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="3"
+                android:background="@drawable/input"
+                android:hint="Enter Your Last Name" />
+        </LinearLayout>
+
+        <!-- Todo : last name-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="User Name" />
+
+            <EditText
+                android:id="@+id/last_name_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="0dp"
+                android:layout_weight="3"
+                android:background="@drawable/input"
+                android:hint="Enter your User Name" />
+        </LinearLayout>
+
+        <!-- Todo : Birthdaye-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="2"
+                android:gravity="left"
+                android:text="Birth Date" />
+
+            <EditText
+                android:id="@+id/bithday_txt"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_weight="2"
+                android:background="@drawable/input"
+                android:ems="10"
+                android:hint="Click Me"
+                android:inputType="date"
+                android:onClick="setDate" />
+
+        </LinearLayout>
+
+        <!--Todo : gender-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0"
+                android:gravity="left"
+                android:text="Gender" />
+
+            <RadioGroup
+                android:id="@+id/gnder_grop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/malegbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/male_setup" />
+
+                <RadioButton
+                    android:id="@+id/femalegbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/male_setup" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="284dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="27dp"
+        android:layout_weight="1"
+        android:background="@drawable/button"
+        android:onClick="reg"
+        android:text="Save" />
+
+
+</RelativeLayout>

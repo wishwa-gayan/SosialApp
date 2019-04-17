@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">SosialApp</string>
+
+    <!--Todo: main-->
+    <string name="title_nav_home">My Post</string>
+    <string name="frends_nav_home">Frends</string>
+    <string name="msg_nav_home">Messages</string>
+    <string name="Groups_nav_home">Groups</string>
+    <string name="notfications_nav_home">Notfications</string>
+    <string name="settings_nav_home">Settings</string>
+    <string name="logout_nav_home">Logout</string>
+    <string name="profile_nav_home">Profile</string>
+    <string name="posst_nav_home">Add New Post</string>
+
+
+    <!--Todo:Nav_post-->
+    <string name="nav_post_edit">Edit Post </string>
+    <string name="nav_post_detele">Delete Post </string>
+
+
+    <!--Todo: appbar-->
+    <string name="app_bar">Home</string>
+    <string name="drwar_open">Drawer Open</string>
+    <string name="drwar_close">Drawer Close</string>
+
+    <!--Todo: reg activity-->
+    <string name="reg_email">Email</string>
+    <string name="reg_pwd">Password</string>
+    <string name="reg_cpwd">Conferm Password</string>
+    <string name="reg_btn">Register</string>
+    <string name="img_logo">logo</string>
+    <string name="login_btn">Login</string>
+    <string name="reg_toast">Authentication failed.</string>
+    <string name="reg_toast1">Pls fill the Password Field</string>
+    <string name="reg_msg">Pls wait, while we are creating your new Account....</string>
+    <string name="reg_title">Creating new account</string>
+    <string name="reg_toast2">Pls provide a vaild email Address</string>
+
+    <!--Todo: login activity-->
+    <string name="login_title">Login</string>
+    <string name="login_singup">Don\'t have an Account Need New Account?</string>
+    <string name="login_with">Or Login With</string>
+    <string name="login_complete">Singin  Complete</string>
+    <string name="login_incomplete">Singin  Not Complete</string>
+    <string name="login_progressbar">Pls wait! Signin....</string>
+    <string name="login_toast">Pls fill the Email Field</string>
+    <string name="login_toast1">Password Length must be greater than 6</string>
+
+
+    <!--Todo: Setup Activity-->
+    <string name="male_setup"> Male</string>
+    <string name="female_setup"> Female</string>
+    <string name="setup_msg">Pls wait, while we are creating your new Account....</string>
+    <string name="setup_title">Creating new account</string>
+    <string name="setup_toast1">User Information is setuped</string>
+    <string name="setup_toast2">There was  a error pls try again</string>
+    <string name="setup_status">Hey There I am using SLGhostClub</string>
+    <string name="setup_uname_error">Pls Provide a user Name</string>
+    <string name="setup_lname_error">Pls Provide a Last Name</string>
+    <string name="setup_fname_error">Pls Provide a First Name</string>
+    <string name="setup_bod_error">Pls set  a birthdate </string>
+    <string name="setup_gender_error">Pls Provide a genger </string>
+    <string name="setup_tool_bar_title">Profile</string>
+
+    <!--Todo:addpost-->
+    <string name="addpost_tool_bar_title">Add  Post</string>
+    <string name="allpost_username">User Name</string>
+    <string name="allpost_time">Has Been Added</string>
+    <string name="allpost_content">Content</string>
+
+    <!--Todo:detalispost-->
+    <string name="detalis_post">Detalis</string>
+
+
+    <!-- Date Util -->
+    <string name="date_util_term_less">less than</string>
+    <string name="date_util_term_a">a</string>
+    <string name="date_util_term_an">an</string>
+
+    <string name="date_util_unit_second">second</string>
+    <string name="date_util_unit_seconds">seconds</string>
+    <string name="date_util_unit_minute">minute</string>
+    <string name="date_util_unit_minutes">minutes</string>
+    <string name="date_util_unit_hour">hour</string>
+    <string name="date_util_unit_hours">hours</string>
+    <string name="date_util_unit_day">day</string>
+    <string name="date_util_unit_days">days</string>
+    <string name="date_util_unit_month">month</string>
+    <string name="date_util_unit_months">months</string>
+    <string name="date_util_unit_year">year</string>
+    <string name="date_util_unit_years">years</string>
+
+    <string name="date_util_prefix_lt">less than a</string>
+    <string name="date_util_prefix_about">about</string>
+    <string name="date_util_prefix_over">over</string>
+    <string name="date_util_prefix_almost">almost</string>
+
+    <string name="date_util_suffix">ago</string>
+
+
+    <!--Todo:comment-->
+    <string name="comment_title">Comments</string>
+
+    <!--Todo:Hoem-->
+    <string name="home_title">My Post</string>
+
+</resources>

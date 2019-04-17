@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addPost">
+
+    <include
+        android:id="@+id/editpost_toolbar"
+        layout="@layout/appbar_layout"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="61dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@drawable/send_1"
+        android:onClick="saveinfo"
+        android:text="" />
+
+    <!--<ImageView-->
+    <!--android:id="@+id/backbutoon_addpost"-->
+    <!--android:layout_width="51dp"-->
+    <!--android:layout_height="53dp"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginStart="2dp"-->
+    <!--android:layout_marginLeft="2dp"-->
+    <!--android:layout_marginTop="0dp"-->
+    <!--app:srcCompat="@drawable/ic_back_arrow"-->
+    <!--android:onClick="backtomain"-->
+    <!--tools:ignore="VectorDrawableCompat" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="61dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/editpostiamge"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:onClick="addimagetostorage"
+            app:srcCompat="@drawable/add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/titlex"
+                android:layout_width="59dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Title" />
+
+            <EditText
+                android:id="@+id/edtipost_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Post Title" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_contetn_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/comment_box"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Write Post Here"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fffde8"
+    tools:context=".Comments"
+    android:id="@+id/comments_activity">
+
+    <include
+        android:id="@+id/comment_layout"
+        layout="@layout/appbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:orientation="vertical"
+        android:weightSum="7"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="84dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_comment"
+            android:layout_width="match_parent"
+            android:layout_height="377dp"
+            android:layout_weight="5">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <EditText
+            android:id="@+id/Comment_edite"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/comment_box"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="Type Your Comment"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="113dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/input"
+            android:onClick="AddComment"
+            android:text="Add " />
+    </LinearLayout>
+</RelativeLayout>

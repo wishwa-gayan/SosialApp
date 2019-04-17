@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:id="@+id/main_app_bar"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toolbar Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:id="@+id/toolbar_title" />
+
+    <ImageView
+        android:id="@+id/back_toolbar"
+        style="@style/AlertDialog.AppCompat.Light"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/icons8back48"
+        android:foregroundGravity="left"
+        android:paddingLeft="0dp" />
+
+</androidx.appcompat.widget.Toolbar>

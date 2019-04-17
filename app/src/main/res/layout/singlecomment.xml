@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginRight="0dp"
+    android:background="@drawable/commetn_lienary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/uanme_comment"
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                app:srcCompat="@drawable/proficicon" />
+
+            <TextView
+                android:id="@+id/comment_username"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="TextView"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/comment_date"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/menu_comment"
+                android:layout_width="38dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="&#8942;"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/menu_hide"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:text="&#8942;"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/menu_hide_UID"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:padding="5dp"
+                android:text="&#8942;"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/comment_background_1"
+            android:ems="10"
+            android:hint="Type Your Comment"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+</RelativeLayout>
